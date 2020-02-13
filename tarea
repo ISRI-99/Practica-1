@@ -1,0 +1,64 @@
+"""ejercicio 1"""
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+print(bicycles)
+"""aparece la lista de biicletas que se dio"""
+"""ejercicio 2"""
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+print(bicycles[1])
+"""solo apareci el elemento de la lista en posicion 1 empezando a contar desde 0"""
+
+"""lista de nombres"""
+name = ('karen','irving','omar','osmar','alexis','cesar')
+print(name[0].title())
+print(name[1].title())
+print(name[2].title())
+print(name[3].title())
+print(name[4].title())
+print(name[5].title())
+
+"""mensaje a los nombres de la lista"""
+
+print(name[0].title()+(" acompañame a un museo"))
+print(name[1].title()+(" te veo en la escuela"))
+print(name[2].title()+(" cuando nos reunimos"))
+print(name[3].title()+(" vamos a una fiesta"))
+print(name[4].title()+(" te veo el sabado para jugar"))
+print(name[5].title()+(" ¿como estas?"))
+
+"""lista de desos """
+deseos= ("deseo terminar la carrera","deseo tener un buen trabajo","deseo conocer alemania","deseo tener mi propio carro","deseo tener una casa","deseo tener una departamento","me gustaria tener un negocio","me gustaria tener un ferrari","deseo tener una pantalla en mi cuarto","quisiera tener un playstation4","me gustaria tener un xbox","me gustaria tener muchos pares de tenis", "me gustaria tener un avion privado", "desoe tener una casa en los angeles","deseo tener un BMW", )
+print(deseos[1:7])
+
+"""playeras"""
+def make_shirt(talla, texto_para_imprimir):
+    print("La talla de la playera es " + talla.title()+"Con el texto de " + texto_para_imprimir.title())
+    
+make_shirt('mediana', 'i <3 python')
+
+def make_t_shirt(talla='grande', texto='i <3 python'):
+    print("la playera es talla y " + talla + " el texto es " + texto+ ".")
+    
+make_t_shirt()
+
+make_t_shirt(talla='mediana')
+
+"""ciudad"""
+def describe_city(ciudad='Salt Lake City', pais='Estados Unidos'):
+    print(ciudad+ " esta en "+pais)
+    
+describe_city()
+describe_city(ciudad='New York')
+describe_city(ciudad='tokio', pais='Japon')
+
+"""restaurante"""
+class RESTAURANT():
+    def __init__(self,restaurant_name,cuisine_type):
+        self.restaurante_name = name
+        self.cuisine_type= cuisine_type
+    def describe_restaurant(self,descripcion):
+        self.descripcion= descripcion
+        print('El restaurante '+self.name.title()+descripcion)
+    def open_restaurant(self,abierto):
+        self.abierto= abierto
+        print('el restaurante se encuentra '+abierto)
+        
